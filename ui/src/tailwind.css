@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home_container {
+  @apply bg-[#003135] h-screen w-screen flex flex-col items-center;
+}
+
+.accuracy_container {
+  @apply bg-[#024950] text-[.9rem] sm:text-[1.1rem] text-[#AFDDE5] w-[300px] sm:w-[400px] max-w-[90vw]
+  rounded-b-2xl z-10 shadow-sm shadow-[#024950] h-[70px] sm:h-[85px] absolute flex flex-col items-center justify-center;
+}
+
+.predictor_form_container {
+  @apply bg-[#AFDDE5] w-screen sm:w-[700px] h-screen sm:h-[94vh] rounded-[8px]
+  sm:translate-y-[40px] max-w-[100vw];
+}
+
+.predictor_form {
+  @apply flex flex-col justify-between h-full pt-[76px] sm:pt-[52px];
+}
