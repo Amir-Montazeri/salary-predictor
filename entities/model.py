@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import OrdinalEncoder
 from modules import FrequencyEncoder
-from pydantic import BaseModel
 import matplotlib.pyplot as plt
 # import seaborn as sns
 # from sklearn.metrics import accuracy_score, confusion_matrix, classification_report

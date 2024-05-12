@@ -1,9 +1,6 @@
-from msilib import schema
-from fastapi import FastAPI, Query
+from fastapi import FastAPI
 from datetime import datetime
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-import json
 from modules import setInterval
 from model import predictor, get_accuracy, get_unique_features
 
@@ -11,10 +8,7 @@ from model import predictor, get_accuracy, get_unique_features
 app = FastAPI()
 
 origins = [
-  "http://localhost",
-  "http://localhost:8569",
-  "http://192.168.1.105",
-  "http://192.168.1.105:8569",
+  "https://main--salary-predictor-ml.netlify.app/"
 ]
 
 app.add_middleware(
