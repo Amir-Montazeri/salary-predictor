@@ -6,7 +6,7 @@ const dev = 'development',
   pro = 'production';
 
 module.exports = {
-  mode: dev,
+  mode: pro,
   entry: {
     bundle: path.resolve(__dirname, 'src/index.jsx'),
   },
