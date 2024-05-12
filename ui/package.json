@@ -11,7 +11,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "babel-loader": "^8.2.5",
@@ -25,9 +26,7 @@
     "postcss": "^8.4.38",
     "postcss-loader": "^8.1.1",
     "postcss-preset-env": "^9.5.9",
-    "webpack-dev-server": "^4.11.0"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^4.11.0",
     "@babel/preset-react": "^7.24.1",
     "axios": "^1.6.8",
     "react": "^18.2.0",
