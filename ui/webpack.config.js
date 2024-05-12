@@ -11,7 +11,7 @@ module.exports = {
     bundle: path.resolve(__dirname, 'src/index.jsx'),
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     // filename: '[name][contenthash].js',
     filename: '[name].js',
     clean: true,
@@ -20,7 +20,7 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist'),
+      directory: path.resolve(__dirname, 'build'),
     },
     port: 8569,
     open: true, // open browser as auto when server run

@@ -13,9 +13,9 @@ function Form({ onChangeSalary }) {
       .get(`${baseApiUrl}/get_unique_features`)
       .then((res) => {
         let renderedUniqueFeatures = {};
-        Object.keys(res.data).map((uniqueFeature) => {
+        Object.keys(res.data)?.map((uniqueFeature) => {
           let renderedUniqueFeatureValues = [];
-          res.data[uniqueFeature].map(
+          res.data[uniqueFeature]?.map(
             (value) =>
               (renderedUniqueFeatureValues = [
                 ...renderedUniqueFeatureValues,
@@ -40,7 +40,7 @@ function Form({ onChangeSalary }) {
     ) {
       setErrors(null);
       let renderedValues = {};
-      Object.keys(currentValues).map((currentFeature) => {
+      Object.keys(currentValues)?.map((currentFeature) => {
         renderedValues = {
           ...renderedValues,
           [currentFeature]: currentValues[currentFeature].value,
@@ -58,7 +58,7 @@ function Form({ onChangeSalary }) {
     }
   };
 
-  const renderedSelectInput = Object.keys(uniqueFeatures).map(
+  const renderedSelectInput = Object.keys(uniqueFeatures)?.map(
     (uniqueFeature) => (
       <SelectInput
         key={uniqueFeature}
