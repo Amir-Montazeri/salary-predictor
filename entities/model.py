@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('salaries.csv')
 # del
-df_uniques = pd.read_csv('salaries_uniques.csv')
 # no null variable!
 independent_columns = ['work_year', 'experience_level', 'employment_type', 'job_title', 'employee_residence', 'remote_ratio', 'company_location', 'company_size']
 X_solid = df.loc[:, independent_columns]
